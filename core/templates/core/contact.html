@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+{% block content %} 
+<h3>Formulario de Contacto</h3> 
+<div class="container">
+    <h1>Contact Us</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+{% endblock %} 

@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="container">
+        <div class="row">
+            {% for galeria in page_obj %}
+            <div class="col">
+                <div class="card" style="width:35rem;">
+                    <img src="{{ galeria.Imagen.url}}" class="card-img-top" height="500px" width="200px">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ galeria.titulo }}</h5>
+                    <p class="card-text">{{ galeria.Description}}</p>
+                    <p class="card-text">Fecha cambio = {{ galeria.creado}}</p>
+                    <p class="card-text">Fecha actualizado = {{ galeria.updated }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+</div>
+    <nav>
+    <ul class="pagination">
+        {% if page_obj.has_previous %}
+        <li class="page-item"><a class="page-link" href="?page=1">first</a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+        {% endif %}
+        {% if page_obj.has_next %}
+        <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a></li>
+        {% endif %}
+        </nav>
+        </ul>
+{% endblock %}
+

@@ -1,0 +1,88 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+          <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Antagonistas</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Ocelot</h2>
+                                            <p>Ocelot se relacionó de cerca con todos los individuos conocidos como Snake, y, luego del Incidente del Buque, adoptó la identidad de Liquid Snake. Conocido como Liquid Ocelot, en los últimos años de su vida tuvo una fuerte rivalidad con quien consideraba su hermano Solid Snake hasta su duelo a muerte sobre Outer Haven.</p>
+                                        </div>
+                                        <img class="img-fluid" src="https://qph.cf2.quoracdn.net/main-qimg-cffa13c67dea068ad979ad5590295fb4-lq" style="height: 300px;" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Liquid snake</h2>
+                                            <p>Liquid Snake, comúnmente llamado Liquid, siendo su nombre real Eli Doe Sears, es el gemelo y archinemésis de Solid Snake, así como comandante de campo de FOXHOUND y de los Genome Soldiers</p>
+                                        </div>
+                                        <img class="img-fluid" src="https://static.wikia.nocookie.net/villains/images/a/af/Liquid_Snake_%28MGS%29.png/revision/latest?cb=20200825212837" style="height: 400px;" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Protagonistas</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Big Boss</h2>
+                                            <p>Tambien conocido como Naked Snake (fue su nombre clave para la mision de infiltrarse en Rusia,su nombre real es Jack) protagonista principal de la saga, conocido como el soldado espia perfecto, criado y entrenado por su mentora conocida como The Boss,que luego de haberla vencido y asesinado por el bien de su patria de los Estados Unidos,
+                                                fue catalogado con el nombre de "Big Boss".
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid" src="https://assetsio.gnwcdn.com/big_boss.jpg.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" style="height: 300px;" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Solid Snake</h2>
+                                            <p>Clon de Big Boss, victima de "Les Enfant Terribles", Solid Snake, también conocido simplemente como Snake fue un soldado estadounidense que formó parte de la unidad de fuerzas especiales FOXHOUND, en donde fue entrenado por veteranos como Big Boss, de quien heredó el nombre de Snake, y McDonell "Master" Miller.</p>
+                                        </div>
+                                        <img class="img-fluid" src="https://static.wikia.nocookie.net/ssbb/images/0/02/Snake_SSBU.png/revision/latest?cb=20180613005941&path-prefix=es" style="height: 400px;" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">¿Eres Hideo Kojima?</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'contact' %}">Contactanos</a>
+                    </div>
+                </div>
+            </section>
+{% endblock %}
